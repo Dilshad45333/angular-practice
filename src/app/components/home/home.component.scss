@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    float: left;
+    position: relative; /* Needed for positioning dropdown */
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar ul ul {
+    display: block; /* Hide submenus by default */
+    position: absolute;
+    top: 100%; /* Position submenus directly below parent */
+    left: 0;
+    color: white;
+    min-width: 160px; /* Minimum width for submenus */
+    z-index: 1;
+}
+.navbar ul ul li {
+    float: none; /* Remove floating for submenu items */
+}
+.navbar ul li:hover > ul {
+    display: block; /* Show submenu on hover */
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar a.active {
+    background-color: #666;
+}
+.content {
+    padding: 20px;
+    margin-top: 50px; /* Adjust according to navbar height */
+}
+.landing {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(45deg, black, transparent);
+    color: white;
+}
+.landing h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+/* Slide-in animation for the landing content */
+.slide-in {
+    animation: slide-in 1s ease-out;
+}
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

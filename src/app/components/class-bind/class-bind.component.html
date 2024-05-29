@@ -1,0 +1,7 @@
+<div [ngClass]="{'active': isActive, 'highlight': isHighlighted}">
+    
+  </div>
+  <button (click)="toggleActive()">Toggle Active</button>
+  <button (click)="toggleHighlight()">Toggle Highlight</button>
+  <div  class="square" [ngStyle]="{'background':color}"></div>
+  

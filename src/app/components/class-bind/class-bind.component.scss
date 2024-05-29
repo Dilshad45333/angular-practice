@@ -1,0 +1,20 @@
+.square{
+    width: 50px;
+    height: 50px;
+    background: bisque;
+}
+.active {
+    background-color: green;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .highlight {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+  }
+  

@@ -1,0 +1,8 @@
+<div class="glass-card">
+    <div *ngIf="status">
+        <ng-container *ngFor="let products of product">
+            <h2>{{products.name}}</h2>
+        </ng-container>
+    </div>
+    <p>This card uses the glassmorphism effect to create a frosted glass look.</p>
+</div>

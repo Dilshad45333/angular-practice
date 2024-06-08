@@ -1,1 +1,20 @@
-<p>parent works!</p>
+<app-child [data]="parentData"></app-child>
+
+<div>
+    <h1>Parent Component</h1>
+    <app-child (dataEmitter)="receiveData($event)"></app-child> <!-- Listen to child component event -->
+    <p>{{ message }}</p>
+  </div>
+
+
+  <!-- hooks concept checking -->
+  <button (click)="toggleMessage()">Toggle Message</button>
+  <app-hooks [message]="message"></app-hooks>
+
+
+  <!-- for using viewchild -->
+
+
+  <div #box>
+    {{'View Child'}}
+  </div>

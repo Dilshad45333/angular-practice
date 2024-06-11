@@ -1,0 +1,11 @@
+<div>
+    <input type="text" [value]="firstname()" name="firstname" #firstnameInput>
+    <button (click)="changeFirstName(firstnameInput.value)">Add </button>
+
+    <input type="text" [value]="lastname()" name="lastname" #lastnameInput>
+    <button (click)="changeLastName(lastnameInput.value)">Add </button>
+
+    <h4>{{firstname()}}</h4>
+    <h4>{{lastname()}}</h4>
+    <h4>{{fullname()}}</h4>
+</div>

@@ -12,6 +12,7 @@ import { NgContainerComponent } from './components/ng-container/ng-container.com
 import { UserComponent } from './components/user/user.component';
 import { HooksComponent } from './components/hooks/hooks.component';
 import { PipeComponent } from './components/pipe/pipe.component';
+import { SignalComponent } from './angular17/signal/signal.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -27,5 +28,6 @@ export const routes: Routes = [
   { path: 'user', component: UserComponent },
   { path: 'hooks', component: HooksComponent },
   { path: 'pipes', component: PipeComponent },
+  { path: 'signal', component: SignalComponent },
 
 ];

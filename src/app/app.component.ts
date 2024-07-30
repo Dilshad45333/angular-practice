@@ -4,7 +4,9 @@ import { HomeComponent } from './components/home/home.component';
 import { ChildComponent } from './components/child/child.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { CommonModule } from '@angular/common';
-
+/**
+ * AppComponent is the root component of the application.
+ */
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,5 +16,8 @@ import { CommonModule } from '@angular/common';
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent {
+  /**
+   * The title of the application.
+   */
   title = 'angular-practice';
 }

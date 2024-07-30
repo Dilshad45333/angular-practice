@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
-
+/**
+ * HomeComponet is the first component of the application.
+ */
 @Component({
   selector: 'app-home',
   standalone: true,

@@ -1,0 +1,17 @@
+{
+    "entryPoints": ["src/app"],
+    "entryPointStrategy": "expand",
+    "out": "docs",
+    "includeVersion": true,
+    "exclude": [
+      "**/*.spec.ts",
+      "**/node_modules/**"
+    ],
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "excludeExternals": true,
+    "excludeNotDocumented": true,
+    "plugin": ["typedoc-plugin-markdown"],
+    "theme": "default"
+  }
+  
